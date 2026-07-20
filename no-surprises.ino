@@ -24,29 +24,29 @@ void loop() {
   // F 
   // C 
   for (int i = 0; i < 3; i++){
-    tone(buzzerPin, get_frequency(A));  
+    tone(buzzerPin, getFrequency(A));  
     delay(beat);              
-    tone(buzzerPin, get_frequency(C));    
+    tone(buzzerPin, getFrequency(C));    
     delay(beat);            
-    tone(buzzerPin, get_frequency(F)); 
+    tone(buzzerPin, getFrequency(F)); 
     delay(beat);  
-    tone(buzzerPin, get_frequency(C)); 
+    tone(buzzerPin, getFrequency(C)); 
     delay(beat);  
 
   }
 
-  tone(buzzerPin, get_frequency(Bf));  
+  tone(buzzerPin, getFrequency(Bf));  
   delay(beat);              
-  tone(buzzerPin, get_frequency(Df));    
+  tone(buzzerPin, getFrequency(Df));    
   delay(beat);            
-  tone(buzzerPin, get_frequency(F)); 
+  tone(buzzerPin, getFrequency(F)); 
   delay(beat);  
-  tone(buzzerPin, get_frequency(G)); 
+  tone(buzzerPin, getFrequency(G)); 
   delay(beat);  
 
 }
 
-float get_frequency(int note){
+float getFrequency(int note){
   return 261.63 * pow(float(2), float(note)/12.0);
 
 }
